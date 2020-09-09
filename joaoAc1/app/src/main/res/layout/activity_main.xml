@@ -6,24 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/campo6"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+
 
     <TextView
         android:id="@+id/campo1"
         android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quantos anos você vai viver?"
-        app:layout_constraintTop_toBottomOf="@id/campo6"
+        android:text="Com quantos anos você vai morrer?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -67,10 +57,18 @@
         android:text="Calcular"
         app:layout_constraintTop_toBottomOf="@id/campo4"
         android:textSize="20sp"
-        android:onClick="calculajoaoIdade"
+        android:onClick="calculaIdade"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="OnClick" />
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/campo6"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/campo5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 
